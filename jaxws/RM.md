@@ -42,7 +42,7 @@ UDDI是一种用于描述、发现、集成Web Service的技术，它是Web Serv
 
 
 
-#3. wsimport命令
+# 3. wsimport命令
 wsimport就是jdk（1.6版本之后）提供的的一个工具，他的作用就是根据WSDL地址生成客户端代码；位置再JAVA_HOME/bin  
 
 >wsimport常用的参数：  
@@ -63,7 +63,7 @@ E:\IdeaProjects\my\webservice\jaxws\src\main\java\com\ifun\wsdl>wsimport -s . -p
 <s:any minOccurs="2" maxOccurs="2" />
 ```
 
-#4. JWS主要注解
+# 4. JWS主要注解
 >@WebService
  
 1. serviceName： 对外发布的服务名，指定 Web Service 的服务名称：wsdl:service。缺省值为 Java 类的简单名称 + Service。（字符串） 
