@@ -34,7 +34,7 @@ WebService通过HTTP协议发送请求和接收结果时，发送的请求内容
 WSDL(WebService Definition Language Web服务描述语言)即用机器能够阅读的方式提供一个正式描述文档而基于XMl的语言。用于描述WebService的服务地址以及WebService的服务接口、参数、返回值。应为是基于XML的，所以WSDL既是机器可阅读的，又是人可阅读的
 
 ## 2.3 UDDI
-UDDI是一种用于描述、发现、集成Web Service的技术，它是Web Service协议栈的一个重要部分。通过UDDI，企业可以根据自己的需要动态查找并使用Web服务，也可以将自己的Web服务动态地发布到UDDI注册中心，供其他用户使用
+UDDIUDDI 的目的是为电子商务建立标准；UDDI是一套基于Web的、分布式的、为Web Service提供的、信息注册中心的实现标准规范，同时也包含一组使企业能将自身提供的Web Service注册，以使别的企业能够发现的访问协议的实现标准。简单说，就是一套规则，方便使用；
 
 1.UDDI是一个跨产业、跨平台的开放性技术，可以帮助Web服务提供商在互联网上发布web服务  
 2.UDDI是一种目录服务，企业可以通过UDDI来注册和搜索Web服务(简单说，UDDI就是一个目录，其中存放的是一些Web服务信息)
