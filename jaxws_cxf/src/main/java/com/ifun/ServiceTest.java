@@ -13,7 +13,7 @@ public class ServiceTest {
     public static void main(String[] args) {
         //发布服务的工厂
         JaxWsServerFactoryBean serverFactoryBean = new JaxWsServerFactoryBean();
-        //设置服务器地址
+        //设置服务地址
         serverFactoryBean.setAddress("http://localhost:8000/ws/hello");
         //设置服务接口
         serverFactoryBean.setServiceClass(HelloService.class);
@@ -24,7 +24,7 @@ public class ServiceTest {
         serverFactoryBean.getInInterceptors().add(new LoggingInInterceptor());
         serverFactoryBean.getOutInterceptors().add(new LoggingOutInterceptor());
 
-        //发布服务
+        //通过工厂创建服务
         serverFactoryBean.create();
 
         System.out.println("发布服务成功，端口8000...");
