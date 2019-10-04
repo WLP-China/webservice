@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                   http://www.springframework.org/schema/beans
+                   http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+    xmlns:jaxws="http://cxf.apache.org/jaxws"
+    http://cxf.apache.org/jaxws
+    http://cxf.apache.org/schemas/jaxws.xsd
+
+    xmlns:cxf="http://cxf.apache.org/core"
+    http://cxf.apache.org/core
+    http://cxf.apache.org/schemas/core.xsd
+
+    xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+    http://cxf.apache.org/jaxrs
+    http://cxf.apache.org/schemas/jaxrs.xsd
+    -->
+
+    <!-- 导入其他配置文件 -->
+    <import resource="applicationContext_ws_servlet.xml"/>
+
+</beans>
+<!--
+参考:
+CXF与Spring的整合（jaxws:server形式配置） https://www.cnblogs.com/zhanxiaoyun/p/6144651.html#_caption_1
+CXF与Spring的整合（jaxws:endpoint形式配置） https://www.cnblogs.com/zhanxiaoyun/p/7942902.html
+-->

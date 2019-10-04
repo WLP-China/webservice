@@ -108,3 +108,24 @@ E:\IdeaProjects\my\webservice\jaxws\src\main\java\com\ifun\wsdl>wsimport -s . -p
 但是可以使用多种方法来配置客户端的处理程序。可以通过对生成的服务类或者 SEI 使用 @HandlerChain 注释来配置客户端的处理程序。此外，可以按程序在服务上注册您自己的 HandlerResolver 接口实现，或者按程序在绑定对象上设置处理程序链。 
 1. file：指定处理程序链文件所在的位置。文件位置可以是采用外部格式的绝对 java.net.URL，也可以是类文件中的相对路径。（字符串） 
 2. name：指定配置文件中处理程序链的名称。
+
+# 5. 其他
+SEI(WebService EndPoint Interface)接口：是webservice的终端接口，webservice服务器端用来处理请求的接口
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

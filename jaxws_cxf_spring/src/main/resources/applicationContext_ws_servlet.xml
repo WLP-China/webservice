@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://cxf.apache.org/jaxws
+           http://cxf.apache.org/schemas/jaxws.xsd">
+    <!--
+      使用<jaxws:server>标签来代替JaxWsServerFactoryBean 来完成发布服务
+
+        address:服务地址(服务完整地址：http://localhost:8080/ws/hello)
+        serviceClass:服务接口
+        （接口和实现类都要加@WebService注解）
+    -->
+    <jaxws:server address="/hello" serviceClass="com.ifun.service.HelloService">
+        <jaxws:serviceBean>
+            <!--引入服务的实现类-->
+            <bean class="com.ifun.service.impl.HelloServiceImpl"></bean>
+        </jaxws:serviceBean>
+    </jaxws:server>
+</beans>
